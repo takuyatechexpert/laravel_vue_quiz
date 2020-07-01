@@ -569,619 +569,570 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("main", [
+      _c("div", { staticClass: "container" }, [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("aside", { staticClass: "col-md-4 col-xs-12" }, [
+          _c("section", { staticClass: "sidebar-sns-section" }, [
+            _c("h3", { staticClass: "text-center sidebar-sns-h3" }, [
+              _vm._v("SNS共有")
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "sidebar-sns-links" },
+              [
+                _c("social-sharing", {
+                  attrs: { url: "", title: "shareボタン" },
+                  inlineTemplate: {
+                    render: function() {
+                      var _vm = this
+                      var _h = _vm.$createElement
+                      var _c = _vm._self._c || _h
+                      return _c(
+                        "div",
+                        { staticClass: "twitter__share" },
+                        [
+                          _c("network", { attrs: { network: "twitter" } }, [
+                            _c("i", { staticClass: "fab fa-twitter" }),
+                            _vm._v(" Twitter\n                ")
+                          ])
+                        ],
+                        1
+                      )
+                    },
+                    staticRenderFns: []
+                  }
+                }),
+                _vm._v(" "),
+                _c("social-sharing", {
+                  attrs: { url: "", title: "shareボタン" },
+                  inlineTemplate: {
+                    render: function() {
+                      var _vm = this
+                      var _h = _vm.$createElement
+                      var _c = _vm._self._c || _h
+                      return _c(
+                        "div",
+                        { staticClass: "facebook__share" },
+                        [
+                          _c("network", { attrs: { network: "facebook" } }, [
+                            _c("i", { staticClass: "fab fa-facebook" }),
+                            _vm._v(" Facebook\n                ")
+                          ])
+                        ],
+                        1
+                      )
+                    },
+                    staticRenderFns: []
+                  }
+                }),
+                _vm._v(" "),
+                _c("social-sharing", {
+                  attrs: { url: "", title: "shareボタン" },
+                  inlineTemplate: {
+                    render: function() {
+                      var _vm = this
+                      var _h = _vm.$createElement
+                      var _c = _vm._self._c || _h
+                      return _c(
+                        "div",
+                        { staticClass: "line__share" },
+                        [
+                          _c("network", { attrs: { network: "line" } }, [
+                            _c("i", { staticClass: "fab fa-line" }),
+                            _vm._v(" Line\n                ")
+                          ])
+                        ],
+                        1
+                      )
+                    },
+                    staticRenderFns: []
+                  }
+                }),
+                _vm._v(" "),
+                _c("social-sharing", {
+                  attrs: { url: "", title: "shareボタン" },
+                  inlineTemplate: {
+                    render: function() {
+                      var _vm = this
+                      var _h = _vm.$createElement
+                      var _c = _vm._self._c || _h
+                      return _c(
+                        "div",
+                        { staticClass: "google__share" },
+                        [
+                          _c("network", { attrs: { network: "googleplus" } }, [
+                            _c("i", { staticClass: "fab fa-google" }),
+                            _vm._v(" google\n                ")
+                          ])
+                        ],
+                        1
+                      )
+                    },
+                    staticRenderFns: []
+                  }
+                })
+              ],
+              1
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(2)
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(3)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("header", [
-        _c("div", { staticClass: "container text-center" }, [
-          _c("h1", [_vm._v("4 Answers Quiz 4択クイズ&クイズ徹底解説")]),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "/" } }, [
-            _c("img", {
-              staticClass: "header-nav__logo",
-              attrs: { src: "/public/images/header-logo.png" }
-            })
-          ])
-        ]),
+    return _c("header", [
+      _c("div", { staticClass: "container text-center" }, [
+        _c("h1", [_vm._v("4 Answers Quiz 4択クイズ&クイズ徹底解説")]),
         _vm._v(" "),
-        _c("nav", { staticClass: "navbar navbar-default navbar-static-top" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "navbar-header" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "navbar-toggle",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "collapse",
-                    "data-target": "#navbar-ex-collapse"
-                  }
-                },
-                [
-                  _c("span", { staticClass: "sr-only" }, [
-                    _vm._v("Toggle navigation")
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "icon-bar" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "icon-bar" }),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "icon-bar" })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass: "navbar-brand",
-                  attrs: { id: "header-nav__home", href: "/" }
-                },
-                [_vm._v("ホーム")]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "collapse navbar-collapse",
-                attrs: { id: "navbar-ex-collapse" }
-              },
-              [
-                _c("ul", { staticClass: "nav navbar-nav navbar-right" }, [
-                  _c("li", [
-                    _c(
-                      "a",
-                      { attrs: { id: "header-nav__login", href: "/login" } },
-                      [_vm._v("ログイン")]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c(
-                      "a",
-                      {
-                        attrs: { id: "header-nav__register", href: "/register" }
-                      },
-                      [_vm._v("ユーザー登録")]
-                    )
-                  ])
-                ])
-              ]
-            )
-          ])
+        _c("a", { attrs: { href: "/" } }, [
+          _c("img", {
+            staticClass: "header-nav__logo",
+            attrs: { src: "/public/images/header-logo.png" }
+          })
         ])
       ]),
       _vm._v(" "),
-      _c("main", [
+      _c("nav", { staticClass: "navbar navbar-default navbar-static-top" }, [
         _c("div", { staticClass: "container" }, [
-          _c("article", { staticClass: "col-md-8 col-xs-12" }, [
-            _c("section", { staticClass: "home-quiz__introduction" }, [
-              _c("h2", { staticClass: "home-quiz__introduction-h2" }, [
-                _c("img", {
-                  staticClass: "home-quiz__introduction-h2-logo",
-                  attrs: { src: "/public/images/what-is-mark.png" }
-                }),
-                _vm._v("4 Answers Quizとは?\n          ")
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "4 Answers Quizとはビジネスマナーから一般常識に至るまで様々なクイズを4択で出題するWEBアプリです。"
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("何度もトライしてみて正解率100%を目指してみてください。")
-              ])
-            ]),
+          _c("div", { staticClass: "navbar-header" }, [
+            _c(
+              "button",
+              {
+                staticClass: "navbar-toggle",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "collapse",
+                  "data-target": "#navbar-ex-collapse"
+                }
+              },
+              [
+                _c("span", { staticClass: "sr-only" }, [
+                  _vm._v("Toggle navigation")
+                ]),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" }),
+                _vm._v(" "),
+                _c("span", { staticClass: "icon-bar" })
+              ]
+            ),
             _vm._v(" "),
-            _c("section", { staticClass: "home-quiz__setting" }, [
-              _c("h2", { staticClass: "home-quiz__setting-h2" }, [
-                _c("img", {
-                  staticClass: "home-quiz__setting-h2-logo",
-                  attrs: { src: "/public/images/directory-icon.png" }
-                }),
-                _vm._v("出題設定\n          ")
-              ]),
-              _vm._v(" "),
-              _c("form", { attrs: { action: "/quiz", method: "post" } }, [
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "1",
-                      checked: ""
-                    }
-                  }),
-                  _vm._v("ビジネスマナー\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "2"
-                    }
-                  }),
-                  _vm._v("一般常識\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "3"
-                    }
-                  }),
-                  _vm._v("就職・転職\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "4"
-                    }
-                  }),
-                  _vm._v("法律\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "5"
-                    }
-                  }),
-                  _vm._v("IT\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    attrs: {
-                      type: "checkbox",
-                      name: "categories[]",
-                      value: "6"
-                    }
-                  }),
-                  _vm._v("雑学\n            ")
-                ]),
-                _vm._v(" "),
-                _c("div", {}, [
-                  _vm._v("\n              全項目チェック\n              "),
+            _c(
+              "a",
+              {
+                staticClass: "navbar-brand",
+                attrs: { id: "header-nav__home", href: "/" }
+              },
+              [_vm._v("ホーム")]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "collapse navbar-collapse",
+              attrs: { id: "navbar-ex-collapse" }
+            },
+            [
+              _c("ul", { staticClass: "nav navbar-nav navbar-right" }, [
+                _c("li", [
                   _c(
-                    "button",
-                    {
-                      attrs: {
-                        type: "button",
-                        name: "check_all",
-                        id: "check-all",
-                        value: "1"
-                      }
-                    },
-                    [_vm._v("ON")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      attrs: {
-                        type: "button",
-                        name: "check_all_off",
-                        id: "check-all-off",
-                        value: "1"
-                      }
-                    },
-                    [_vm._v("OFF")]
+                    "a",
+                    { attrs: { id: "header-nav__login", href: "/login" } },
+                    [_vm._v("ログイン")]
                   )
                 ]),
                 _vm._v(" "),
-                _c(
-                  "button",
-                  { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-                  [_vm._v("出題開始")]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  attrs: { type: "hidden", name: "_token", value: "" }
-                })
-              ])
-            ]),
-            _vm._v(" "),
-            _c("section", { staticClass: "home-quiz__ranking" }, [
-              _c("h2", { staticClass: "home-quiz__ranking-h2" }, [
-                _c("img", {
-                  staticClass: "home-quiz__ranking-h2-logo",
-                  attrs: { src: "/public/images/graph-icon.png" }
-                }),
-                _vm._v("ランキング\n          ")
-              ]),
-              _vm._v(" "),
-              _c("div", [
-                _c("label", [
-                  _c("input", {
-                    staticClass: "ranking-radio",
-                    attrs: {
-                      type: "radio",
-                      name: "ranking-radio",
-                      value: "1",
-                      checked: ""
-                    }
-                  }),
-                  _vm._v("総合\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    staticClass: "ranking-radio",
-                    attrs: { type: "radio", name: "ranking-radio", value: "2" }
-                  }),
-                  _vm._v("今月\n            ")
-                ]),
-                _vm._v(" "),
-                _c("label", [
-                  _c("input", {
-                    staticClass: "ranking-radio",
-                    attrs: { type: "radio", name: "ranking-radio", value: "3" }
-                  }),
-                  _vm._v("今週\n            ")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "home_quiz__ranking-chart" })
-            ]),
-            _vm._v(" "),
-            _c("section", { staticClass: "home__notice" }, [
-              _c("h2", { staticClass: "home__notice-h2" }, [
-                _c("img", {
-                  staticClass: "home__notice-h2-logo",
-                  attrs: { src: "/public/images/news-icon.png" }
-                }),
-                _vm._v("お知らせ情報\n          ")
-              ]),
-              _vm._v(" "),
-              _c("dl", [
-                _c("dt", [_vm._v("2019/08/23")]),
-                _vm._v(" "),
-                _c("dd", [_vm._v("サイトを開設しました。")])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("aside", { staticClass: "col-md-4 col-xs-12" }, [
-            _c("section", { staticClass: "sidebar-sns-section" }, [
-              _c("h3", { staticClass: "text-center sidebar-sns-h3" }, [
-                _vm._v("SNS共有")
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "sidebar-sns-links" })
-            ]),
-            _vm._v(" "),
-            _c("section", { staticClass: "sidebar-keywords" }, [
-              _c("h3", { staticClass: "text-center sidebar-keywords-h3" }, [
-                _vm._v("キーワード集")
-              ]),
-              _vm._v(" "),
-              _c("ul", { staticClass: "sidebar-keywords__links" }, [
                 _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=A" } }, [
-                    _vm._v("Ａ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=B" } }, [
-                    _vm._v("Ｂ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=C" } }, [
-                    _vm._v("Ｃ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=D" } }, [
-                    _vm._v("Ｄ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=E" } }, [
-                    _vm._v("Ｅ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=F" } }, [
-                    _vm._v("Ｆ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=G" } }, [
-                    _vm._v("Ｇ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=H" } }, [
-                    _vm._v("Ｈ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=I" } }, [
-                    _vm._v("Ｉ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=J" } }, [
-                    _vm._v("Ｊ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=K" } }, [
-                    _vm._v("Ｋ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=L" } }, [
-                    _vm._v("Ｌ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=M" } }, [
-                    _vm._v("Ｍ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=N" } }, [
-                    _vm._v("Ｎ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=O" } }, [
-                    _vm._v("Ｏ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=P" } }, [
-                    _vm._v("Ｐ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=Q" } }, [
-                    _vm._v("Ｑ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=R" } }, [
-                    _vm._v("Ｒ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=S" } }, [
-                    _vm._v("Ｓ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=T" } }, [
-                    _vm._v("Ｔ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=U" } }, [
-                    _vm._v("Ｕ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=V" } }, [
-                    _vm._v("Ｖ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=W" } }, [
-                    _vm._v("Ｗ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=X" } }, [
-                    _vm._v("Ｘ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=Y" } }, [
-                    _vm._v("Ｙ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=Z" } }, [
-                    _vm._v("Ｚ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=あ" } }, [
-                    _vm._v("あ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=い" } }, [
-                    _vm._v("い")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=う" } }, [
-                    _vm._v("う")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=え" } }, [
-                    _vm._v("え")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=お" } }, [
-                    _vm._v("お")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=か" } }, [
-                    _vm._v("か")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=き" } }, [
-                    _vm._v("き")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=く" } }, [
-                    _vm._v("く")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=け" } }, [
-                    _vm._v("け")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=こ" } }, [
-                    _vm._v("こ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=さ" } }, [
-                    _vm._v("さ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=し" } }, [
-                    _vm._v("し")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=す" } }, [
-                    _vm._v("す")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=せ" } }, [
-                    _vm._v("せ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=そ" } }, [
-                    _vm._v("そ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=た" } }, [
-                    _vm._v("た")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ち" } }, [
-                    _vm._v("ち")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=つ" } }, [
-                    _vm._v("つ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=て" } }, [
-                    _vm._v("て")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=と" } }, [
-                    _vm._v("と")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=な" } }, [
-                    _vm._v("な")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=に" } }, [
-                    _vm._v("に")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ぬ" } }, [
-                    _vm._v("ぬ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ね" } }, [
-                    _vm._v("ね")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=の" } }, [
-                    _vm._v("の")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=は" } }, [
-                    _vm._v("は")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ひ" } }, [
-                    _vm._v("ひ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ふ" } }, [
-                    _vm._v("ふ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=へ" } }, [
-                    _vm._v("へ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ほ" } }, [
-                    _vm._v("ほ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=ま" } }, [
-                    _vm._v("ま")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=み" } }, [
-                    _vm._v("み")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=む" } }, [
-                    _vm._v("む")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=め" } }, [
-                    _vm._v("め")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=も" } }, [
-                    _vm._v("も")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ら" } }, [
-                    _vm._v("ら")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=り" } }, [
-                    _vm._v("り")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=る" } }, [
-                    _vm._v("る")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=れ" } }, [
-                    _vm._v("れ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ろ" } }, [
-                    _vm._v("ろ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c("a", { attrs: { href: "/keyword?initial=や" } }, [
-                    _vm._v("や")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=ゆ" } }, [
-                    _vm._v("ゆ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=よ" } }, [
-                    _vm._v("よ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=わ" } }, [
-                    _vm._v("わ")
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "/keyword?initial=を" } }, [
-                    _vm._v("を")
-                  ])
+                  _c(
+                    "a",
+                    {
+                      attrs: { id: "header-nav__register", href: "/register" }
+                    },
+                    [_vm._v("ユーザー登録")]
+                  )
                 ])
               ])
-            ])
-          ])
+            ]
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("article", { staticClass: "col-md-8 col-xs-12" }, [
+      _c("section", { staticClass: "home-quiz__introduction" }, [
+        _c("h2", { staticClass: "home-quiz__introduction-h2" }, [
+          _c("img", {
+            staticClass: "home-quiz__introduction-h2-logo",
+            attrs: { src: "/public/images/what-is-mark.png" }
+          }),
+          _vm._v("4 Answers Quizとは?\n          ")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "4 Answers Quizとはビジネスマナーから一般常識に至るまで様々なクイズを4択で出題するWEBアプリです。"
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("何度もトライしてみて正解率100%を目指してみてください。")
         ])
       ]),
       _vm._v(" "),
-      _c("footer", [
-        _c("div", { staticClass: "container text-center" }, [
-          _c("small", [_vm._v("© 2019 4Answers-quiz. All rights reserved.")])
+      _c("section", { staticClass: "home-quiz__setting" }, [
+        _c("h2", { staticClass: "home-quiz__setting-h2" }, [
+          _c("img", {
+            staticClass: "home-quiz__setting-h2-logo",
+            attrs: { src: "/public/images/directory-icon.png" }
+          }),
+          _vm._v("出題設定\n          ")
+        ]),
+        _vm._v(" "),
+        _c("form", { attrs: { action: "/quiz", method: "post" } }, [
+          _c("label", [
+            _c("input", {
+              attrs: {
+                type: "checkbox",
+                name: "categories[]",
+                value: "1",
+                checked: ""
+              }
+            }),
+            _vm._v("ビジネスマナー\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              attrs: { type: "checkbox", name: "categories[]", value: "2" }
+            }),
+            _vm._v("一般常識\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              attrs: { type: "checkbox", name: "categories[]", value: "3" }
+            }),
+            _vm._v("就職・転職\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              attrs: { type: "checkbox", name: "categories[]", value: "4" }
+            }),
+            _vm._v("法律\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              attrs: { type: "checkbox", name: "categories[]", value: "5" }
+            }),
+            _vm._v("IT\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              attrs: { type: "checkbox", name: "categories[]", value: "6" }
+            }),
+            _vm._v("雑学\n            ")
+          ]),
+          _vm._v(" "),
+          _c("div", {}, [
+            _vm._v("\n              全項目チェック\n              "),
+            _c(
+              "button",
+              {
+                attrs: {
+                  type: "button",
+                  name: "check_all",
+                  id: "check-all",
+                  value: "1"
+                }
+              },
+              [_vm._v("ON")]
+            ),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                attrs: {
+                  type: "button",
+                  name: "check_all_off",
+                  id: "check-all-off",
+                  value: "1"
+                }
+              },
+              [_vm._v("OFF")]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+            [_vm._v("出題開始")]
+          ),
+          _vm._v(" "),
+          _c("input", { attrs: { type: "hidden", name: "_token", value: "" } })
         ])
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "home-quiz__ranking" }, [
+        _c("h2", { staticClass: "home-quiz__ranking-h2" }, [
+          _c("img", {
+            staticClass: "home-quiz__ranking-h2-logo",
+            attrs: { src: "/public/images/graph-icon.png" }
+          }),
+          _vm._v("ランキング\n          ")
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("label", [
+            _c("input", {
+              staticClass: "ranking-radio",
+              attrs: {
+                type: "radio",
+                name: "ranking-radio",
+                value: "1",
+                checked: ""
+              }
+            }),
+            _vm._v("総合\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              staticClass: "ranking-radio",
+              attrs: { type: "radio", name: "ranking-radio", value: "2" }
+            }),
+            _vm._v("今月\n            ")
+          ]),
+          _vm._v(" "),
+          _c("label", [
+            _c("input", {
+              staticClass: "ranking-radio",
+              attrs: { type: "radio", name: "ranking-radio", value: "3" }
+            }),
+            _vm._v("今週\n            ")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "home_quiz__ranking-chart" })
+      ]),
+      _vm._v(" "),
+      _c("section", { staticClass: "home__notice" }, [
+        _c("h2", { staticClass: "home__notice-h2" }, [
+          _c("img", {
+            staticClass: "home__notice-h2-logo",
+            attrs: { src: "/public/images/news-icon.png" }
+          }),
+          _vm._v("お知らせ情報\n          ")
+        ]),
+        _vm._v(" "),
+        _c("dl", [
+          _c("dt", [_vm._v("2019/08/23")]),
+          _vm._v(" "),
+          _c("dd", [_vm._v("サイトを開設しました。")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "sidebar-keywords" }, [
+      _c("h3", { staticClass: "text-center sidebar-keywords-h3" }, [
+        _vm._v("キーワード集")
+      ]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "sidebar-keywords__links" }, [
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=A" } }, [_vm._v("Ａ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=B" } }, [_vm._v("Ｂ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=C" } }, [_vm._v("Ｃ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=D" } }, [_vm._v("Ｄ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=E" } }, [_vm._v("Ｅ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=F" } }, [_vm._v("Ｆ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=G" } }, [_vm._v("Ｇ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=H" } }, [_vm._v("Ｈ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=I" } }, [_vm._v("Ｉ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=J" } }, [_vm._v("Ｊ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=K" } }, [_vm._v("Ｋ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=L" } }, [_vm._v("Ｌ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=M" } }, [_vm._v("Ｍ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=N" } }, [_vm._v("Ｎ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=O" } }, [_vm._v("Ｏ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=P" } }, [_vm._v("Ｐ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=Q" } }, [_vm._v("Ｑ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=R" } }, [_vm._v("Ｒ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=S" } }, [_vm._v("Ｓ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=T" } }, [_vm._v("Ｔ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=U" } }, [_vm._v("Ｕ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=V" } }, [_vm._v("Ｖ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=W" } }, [_vm._v("Ｗ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=X" } }, [_vm._v("Ｘ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=Y" } }, [_vm._v("Ｙ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=Z" } }, [_vm._v("Ｚ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=あ" } }, [_vm._v("あ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=い" } }, [_vm._v("い")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=う" } }, [_vm._v("う")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=え" } }, [_vm._v("え")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=お" } }, [_vm._v("お")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=か" } }, [_vm._v("か")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=き" } }, [_vm._v("き")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=く" } }, [_vm._v("く")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=け" } }, [_vm._v("け")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=こ" } }, [_vm._v("こ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=さ" } }, [_vm._v("さ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=し" } }, [_vm._v("し")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=す" } }, [_vm._v("す")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=せ" } }, [_vm._v("せ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=そ" } }, [_vm._v("そ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=た" } }, [_vm._v("た")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ち" } }, [_vm._v("ち")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=つ" } }, [_vm._v("つ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=て" } }, [_vm._v("て")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=と" } }, [_vm._v("と")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=な" } }, [_vm._v("な")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=に" } }, [_vm._v("に")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ぬ" } }, [_vm._v("ぬ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ね" } }, [_vm._v("ね")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=の" } }, [_vm._v("の")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=は" } }, [_vm._v("は")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ひ" } }, [_vm._v("ひ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ふ" } }, [_vm._v("ふ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=へ" } }, [_vm._v("へ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ほ" } }, [_vm._v("ほ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=ま" } }, [_vm._v("ま")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=み" } }, [_vm._v("み")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=む" } }, [_vm._v("む")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=め" } }, [_vm._v("め")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=も" } }, [_vm._v("も")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ら" } }, [_vm._v("ら")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=り" } }, [_vm._v("り")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=る" } }, [_vm._v("る")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=れ" } }, [_vm._v("れ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ろ" } }, [_vm._v("ろ")])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "/keyword?initial=や" } }, [_vm._v("や")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=ゆ" } }, [_vm._v("ゆ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=よ" } }, [_vm._v("よ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=わ" } }, [_vm._v("わ")]),
+          _vm._v(" "),
+          _c("a", { attrs: { href: "/keyword?initial=を" } }, [_vm._v("を")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("footer", [
+      _c("div", { staticClass: "container text-center" }, [
+        _c("small", [_vm._v("© 2019 4Answers-quiz. All rights reserved.")])
       ])
     ])
   }

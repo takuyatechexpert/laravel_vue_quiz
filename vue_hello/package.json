@@ -22,6 +22,7 @@
     "laravel-mix": "^4.1.2",
     "node-sass": "^4.14.1",
     "vue": "^2.6.11",
+    "vue-social-sharing": "^2.4.7",
     "vue-template-compiler": "^2.6.11"
   }
 }
