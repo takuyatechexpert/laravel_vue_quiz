@@ -214,12 +214,14 @@
 <script>
 import TheHeader from "../layout/TheHeader";
 import TheFooter from "../layout/TheFooter";
+import TheSidebar from "../layout/TheSidebar";
 // header,foolerファイルを使える様にしている
 
 export default {
   components: {
     TheHeader,
     TheFooter,
+    TheSidebar,
     // importしたものを使用する
     // template側で使用するときはケバブケースになるthe-header
   }
