@@ -97,6 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layout_TheHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layout/TheHeader */ "./resources/js/components/layout/TheHeader.vue");
 /* harmony import */ var _layout_TheFooter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layout/TheFooter */ "./resources/js/components/layout/TheFooter.vue");
+/* harmony import */ var _layout_TheSidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layout/TheSidebar */ "./resources/js/components/layout/TheSidebar.vue");
 //
 //
 //
@@ -186,137 +187,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
  // header,foolerファイルを使える様にしている
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     TheHeader: _layout_TheHeader__WEBPACK_IMPORTED_MODULE_0__["default"],
-    TheFooter: _layout_TheFooter__WEBPACK_IMPORTED_MODULE_1__["default"] // importしたものを使用する
+    TheFooter: _layout_TheFooter__WEBPACK_IMPORTED_MODULE_1__["default"],
+    TheSidebar: _layout_TheSidebar__WEBPACK_IMPORTED_MODULE_2__["default"] // importしたものを使用する
     // template側で使用するときはケバブケースになるthe-header
 
   }
@@ -936,10 +815,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Quiz.vue?vue&type=template&id=ee5f848c&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/page/Quiz.vue?vue&type=template&id=ee5f848c& ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6& ***!
+  \********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -951,270 +830,116 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("the-header"),
-      _vm._v(" "),
-      _c("main", [
-        _c("div", { staticClass: "container" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("aside", { staticClass: "col-md-4 col-xs-12" }, [
-            _c("section", { staticClass: "sidebar-sns-section" }, [
-              _c("h3", { staticClass: "text-center sidebar-sns-h3" }, [
-                _vm._v("SNS共有")
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "sidebar-sns-links" },
-                [
-                  _c("social-sharing", {
-                    attrs: { title: "shareボタン" },
-                    inlineTemplate: {
-                      render: function() {
-                        var _vm = this
-                        var _h = _vm.$createElement
-                        var _c = _vm._self._c || _h
-                        return _c(
-                          "div",
-                          { staticClass: "twitter__share" },
-                          [
-                            _c("network", { attrs: { network: "twitter" } }, [
-                              _c("i", { staticClass: "fab fa-twitter" }),
-                              _vm._v(" Twitter\n                ")
-                            ])
-                          ],
-                          1
-                        )
-                      },
-                      staticRenderFns: []
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("social-sharing", {
-                    attrs: { title: "shareボタン" },
-                    inlineTemplate: {
-                      render: function() {
-                        var _vm = this
-                        var _h = _vm.$createElement
-                        var _c = _vm._self._c || _h
-                        return _c(
-                          "div",
-                          { staticClass: "facebook__share" },
-                          [
-                            _c("network", { attrs: { network: "facebook" } }, [
-                              _c("i", { staticClass: "fab fa-facebook" }),
-                              _vm._v(" Facebook\n                ")
-                            ])
-                          ],
-                          1
-                        )
-                      },
-                      staticRenderFns: []
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("social-sharing", {
-                    attrs: { title: "shareボタン" },
-                    inlineTemplate: {
-                      render: function() {
-                        var _vm = this
-                        var _h = _vm.$createElement
-                        var _c = _vm._self._c || _h
-                        return _c(
-                          "div",
-                          { staticClass: "line__share" },
-                          [
-                            _c("network", { attrs: { network: "line" } }, [
-                              _c("i", { staticClass: "fab fa-line" }),
-                              _vm._v(" Line\n                ")
-                            ])
-                          ],
-                          1
-                        )
-                      },
-                      staticRenderFns: []
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("social-sharing", {
-                    attrs: { title: "shareボタン" },
-                    inlineTemplate: {
-                      render: function() {
-                        var _vm = this
-                        var _h = _vm.$createElement
-                        var _c = _vm._self._c || _h
-                        return _c(
-                          "div",
-                          { staticClass: "google__share" },
-                          [
-                            _c(
-                              "network",
-                              { attrs: { network: "googleplus" } },
-                              [
-                                _c("i", { staticClass: "fab fa-google" }),
-                                _vm._v(" google\n                ")
-                              ]
-                            )
-                          ],
-                          1
-                        )
-                      },
-                      staticRenderFns: []
-                    }
-                  })
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _vm._m(1)
-          ])
-        ])
+  return _c("aside", { staticClass: "col-md-4 col-xs-12" }, [
+    _c("section", { staticClass: "sidebar-sns-section" }, [
+      _c("h3", { staticClass: "text-center sidebar-sns-h3" }, [
+        _vm._v("SNS共有")
       ]),
       _vm._v(" "),
-      _c("the-footer")
-    ],
-    1
-  )
+      _c(
+        "div",
+        { staticClass: "sidebar-sns-links" },
+        [
+          _c("social-sharing", {
+            attrs: { title: "shareボタン" },
+            inlineTemplate: {
+              render: function() {
+                var _vm = this
+                var _h = _vm.$createElement
+                var _c = _vm._self._c || _h
+                return _c(
+                  "div",
+                  { staticClass: "twitter__share" },
+                  [
+                    _c("network", { attrs: { network: "twitter" } }, [
+                      _c("i", { staticClass: "fab fa-twitter" }),
+                      _vm._v(" Twitter\n          ")
+                    ])
+                  ],
+                  1
+                )
+              },
+              staticRenderFns: []
+            }
+          }),
+          _vm._v(" "),
+          _c("social-sharing", {
+            attrs: { title: "shareボタン" },
+            inlineTemplate: {
+              render: function() {
+                var _vm = this
+                var _h = _vm.$createElement
+                var _c = _vm._self._c || _h
+                return _c(
+                  "div",
+                  { staticClass: "facebook__share" },
+                  [
+                    _c("network", { attrs: { network: "facebook" } }, [
+                      _c("i", { staticClass: "fab fa-facebook" }),
+                      _vm._v(" Facebook\n          ")
+                    ])
+                  ],
+                  1
+                )
+              },
+              staticRenderFns: []
+            }
+          }),
+          _vm._v(" "),
+          _c("social-sharing", {
+            attrs: { title: "shareボタン" },
+            inlineTemplate: {
+              render: function() {
+                var _vm = this
+                var _h = _vm.$createElement
+                var _c = _vm._self._c || _h
+                return _c(
+                  "div",
+                  { staticClass: "line__share" },
+                  [
+                    _c("network", { attrs: { network: "line" } }, [
+                      _c("i", { staticClass: "fab fa-line" }),
+                      _vm._v(" Line\n          ")
+                    ])
+                  ],
+                  1
+                )
+              },
+              staticRenderFns: []
+            }
+          }),
+          _vm._v(" "),
+          _c("social-sharing", {
+            attrs: { title: "shareボタン" },
+            inlineTemplate: {
+              render: function() {
+                var _vm = this
+                var _h = _vm.$createElement
+                var _c = _vm._self._c || _h
+                return _c(
+                  "div",
+                  { staticClass: "google__share" },
+                  [
+                    _c("network", { attrs: { network: "googleplus" } }, [
+                      _c("i", { staticClass: "fab fa-google" }),
+                      _vm._v(" google\n          ")
+                    ])
+                  ],
+                  1
+                )
+              },
+              staticRenderFns: []
+            }
+          })
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(0)
+  ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("article", { staticClass: "col-md-8 col-xs-12" }, [
-      _c("section", [
-        _c("h2", { staticClass: "quiz-question-h2" }, [
-          _c("img", {
-            staticClass: "quiz-question__logo",
-            attrs: { src: "public/images/what-is-mark.png" }
-          }),
-          _vm._v("\n            第1問\n          ")
-        ]),
-        _vm._v(" "),
-        _c("p", [_vm._v("正しい敬語を使った表現を１つ選んでください。")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "quiz-answer__list" }, [
-          _c("ul", [
-            _c("li", [
-              _c("a", [_c("button", [_vm._v("1")])]),
-              _vm._v(
-                "\n                受付でうかがってください。\n              "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", [_c("button", [_vm._v("2")])]),
-              _vm._v(
-                "\n                課長がおっしゃったように、ファイルをご覧ください。\n              "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", [_c("button", [_vm._v("3")])]),
-              _vm._v(
-                "\n                部長が申されたように進めていきます。\n              "
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", [
-              _c("a", [_c("button", [_vm._v("4")])]),
-              _vm._v(
-                "\n                ○△商事の□□様がお越しになられました。\n              "
-              )
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", [
-        _c("h2", { staticClass: "quiz-correct-h2" }, [
-          _c("img", {
-            staticClass: "quiz-correct__logo",
-            attrs: { src: "public/images/correct-mark.png" }
-          }),
-          _vm._v("正解\n          ")
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _c("button", { staticClass: "quiz-correct-answer" }, [_vm._v("1")])
-        ]),
-        _vm._v(" "),
-        _c("button", [_vm._v("正解を表示する")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "alert alert-info" }, [
-          _c("strong", [_vm._v("正解!")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "alert alert-danger" }, [
-          _c("strong", [_vm._v("不正解!")])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", [
-        _c("h2", { staticClass: "quiz-commentary-h2" }, [
-          _c("img", {
-            staticClass: "quiz-commentary__logo",
-            attrs: { src: "public/images/commentary-mark.png" }
-          }),
-          _vm._v("解説\n          ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "quiz-commentary__text" }, [
-          _vm._v("\n            1）3）4）は、どこが間違っていたの？ "),
-          _c("br"),
-          _vm._v("\n            1）受付でうかがってください。"),
-          _c("br"),
-          _vm._v(
-            "\n            「うかがう」は謙譲語。謙譲語は自分または身内（自分の会社も含みます）の者に使う言葉で、相手に使うのは間違いです。"
-          ),
-          _c("br"),
-          _vm._v("\n            『受付でお尋ねください。』が正解です。"),
-          _c("br"),
-          _c("br"),
-          _vm._v("\n            3）部長が申されたように進めていきます。"),
-          _c("br"),
-          _vm._v(
-            "\n            「申す」も謙譲語です。謙譲語にれる・られるを付けても尊敬語にはなりません。"
-          ),
-          _c("br"),
-          _vm._v(
-            "\n            『社長がおっしゃったように進めていきます。』が正解です。"
-          ),
-          _c("br"),
-          _c("br"),
-          _vm._v("\n            4）○△商事の□□様がお越しになられました。"),
-          _c("br"),
-          _vm._v(
-            "\n            「なられました」は二重敬語の典型的な表現です。"
-          ),
-          _c("br"),
-          _vm._v(
-            "\n            『○△商事の□□様がお越しになりました。』が正解です。"
-          ),
-          _c("br")
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-primary center-block",
-            attrs: { type: "button" }
-          },
-          [_vm._v("次の問題へ")]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          { staticClass: "center-block", attrs: { type: "button" } },
-          [_vm._v("結果を見る")]
-        )
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -1382,6 +1107,182 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("a", { attrs: { href: "/keyword?initial=を" } }, [_vm._v("を")])
         ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/page/Quiz.vue?vue&type=template&id=ee5f848c&":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/page/Quiz.vue?vue&type=template&id=ee5f848c& ***!
+  \************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("the-header"),
+      _vm._v(" "),
+      _c("main", [
+        _c(
+          "div",
+          { staticClass: "container" },
+          [_vm._m(0), _vm._v(" "), _c("the-sidebar")],
+          1
+        )
+      ]),
+      _vm._v(" "),
+      _c("the-footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("article", { staticClass: "col-md-8 col-xs-12" }, [
+      _c("section", [
+        _c("h2", { staticClass: "quiz-question-h2" }, [
+          _c("img", {
+            staticClass: "quiz-question__logo",
+            attrs: { src: "public/images/what-is-mark.png" }
+          }),
+          _vm._v("\n            第1問\n          ")
+        ]),
+        _vm._v(" "),
+        _c("p", [_vm._v("正しい敬語を使った表現を１つ選んでください。")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "quiz-answer__list" }, [
+          _c("ul", [
+            _c("li", [
+              _c("a", [_c("button", [_vm._v("1")])]),
+              _vm._v(
+                "\n                受付でうかがってください。\n              "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", [_c("button", [_vm._v("2")])]),
+              _vm._v(
+                "\n                課長がおっしゃったように、ファイルをご覧ください。\n              "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", [_c("button", [_vm._v("3")])]),
+              _vm._v(
+                "\n                部長が申されたように進めていきます。\n              "
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", [_c("button", [_vm._v("4")])]),
+              _vm._v(
+                "\n                ○△商事の□□様がお越しになられました。\n              "
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", [
+        _c("h2", { staticClass: "quiz-correct-h2" }, [
+          _c("img", {
+            staticClass: "quiz-correct__logo",
+            attrs: { src: "public/images/correct-mark.png" }
+          }),
+          _vm._v("正解\n          ")
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _c("button", { staticClass: "quiz-correct-answer" }, [_vm._v("1")])
+        ]),
+        _vm._v(" "),
+        _c("button", [_vm._v("正解を表示する")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "alert alert-info" }, [
+          _c("strong", [_vm._v("正解!")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "alert alert-danger" }, [
+          _c("strong", [_vm._v("不正解!")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("section", [
+        _c("h2", { staticClass: "quiz-commentary-h2" }, [
+          _c("img", {
+            staticClass: "quiz-commentary__logo",
+            attrs: { src: "public/images/commentary-mark.png" }
+          }),
+          _vm._v("解説\n          ")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "quiz-commentary__text" }, [
+          _vm._v("\n            1）3）4）は、どこが間違っていたの？ "),
+          _c("br"),
+          _vm._v("\n            1）受付でうかがってください。"),
+          _c("br"),
+          _vm._v(
+            "\n            「うかがう」は謙譲語。謙譲語は自分または身内（自分の会社も含みます）の者に使う言葉で、相手に使うのは間違いです。"
+          ),
+          _c("br"),
+          _vm._v("\n            『受付でお尋ねください。』が正解です。"),
+          _c("br"),
+          _c("br"),
+          _vm._v("\n            3）部長が申されたように進めていきます。"),
+          _c("br"),
+          _vm._v(
+            "\n            「申す」も謙譲語です。謙譲語にれる・られるを付けても尊敬語にはなりません。"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n            『社長がおっしゃったように進めていきます。』が正解です。"
+          ),
+          _c("br"),
+          _c("br"),
+          _vm._v("\n            4）○△商事の□□様がお越しになられました。"),
+          _c("br"),
+          _vm._v(
+            "\n            「なられました」は二重敬語の典型的な表現です。"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n            『○△商事の□□様がお越しになりました。』が正解です。"
+          ),
+          _c("br")
+        ]),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary center-block",
+            attrs: { type: "button" }
+          },
+          [_vm._v("次の問題へ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "center-block", attrs: { type: "button" } },
+          [_vm._v("結果を見る")]
+        )
       ])
     ])
   }
@@ -14035,6 +13936,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TheHeader_vue_vue_type_template_id_12a31364___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TheHeader_vue_vue_type_template_id_12a31364___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/layout/TheSidebar.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/layout/TheSidebar.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TheSidebar.vue?vue&type=template&id=356089d6& */ "./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/layout/TheSidebar.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./TheSidebar.vue?vue&type=template&id=356089d6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/layout/TheSidebar.vue?vue&type=template&id=356089d6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TheSidebar_vue_vue_type_template_id_356089d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
