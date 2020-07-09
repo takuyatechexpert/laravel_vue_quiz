@@ -15,7 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
-    "bootstrap": "^3.3.7",
+    "axios": "^0.19.2",
+    "bootstrap": ">=3.4.1",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
     "chart.js": "^2.9.3",
@@ -26,6 +27,7 @@
     "sass-loader": "^7.3.1",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
+    "vue-router": "^3.3.4",
     "vue-social-sharing": "^2.4.7",
     "vue-template-compiler": "^2.6.11"
   }
