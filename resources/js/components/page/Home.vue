@@ -75,6 +75,12 @@
               <dt>2019/08/23</dt>
               <dd>サイトを開設しました。</dd>
             </dl>
+
+            <dl v-for="(info, index) in information" :key="index">
+              <dt>{{info.created_at}}</dt>
+              <dd>{{info.information}}</dd>
+            </dl>
+
           </section>
         </article>
         
@@ -107,9 +113,17 @@ export default {
 
   data() {
     return {
-      categories: [1] // categoriesのデフォルト値を設定
+      categories: [1], // categoriesのデフォルト値を設定
+      information :[]
     };
   },
+
+  mounted() {
+    this.$http.get("/api/information").then(response => {
+      this.information = response.data;
+    });
+  },
+  
   methods: {
     goQuiz() { // @click.stop.preventで設定したgoQuiz()を定義
       this.$router.push("/quiz?categories=" + this.categories);
