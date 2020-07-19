@@ -18,4 +18,5 @@ class Quiz extends Model
   public function category()
   {
     return $this->hasOne('App\Category', 'id', 'categories_id');
+  }
 }
