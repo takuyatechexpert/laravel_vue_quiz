@@ -82,6 +82,8 @@
 
     <the-footer></the-footer>
 
+    <the-modal :correctPercentageObject="correctPercentageObject" ref="modal" ></the-modal>
+
   </div>
 </template>
 
@@ -89,6 +91,7 @@
 import TheHeader from "../layout/TheHeader";
 import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
+import TheModal from "../module/TheModal";
 // header,foolerファイルを使える様にしている
 
 export default {
@@ -96,6 +99,7 @@ export default {
     TheHeader,
     TheFooter,
     TheSidebar,
+    TheModal,
     // importしたものを使用する
     // template側で使用するときはケバブケースになるthe-header
   },
@@ -114,7 +118,8 @@ export default {
       isQuizFinish: false, //クイズが終了したかどうか
       score: 0,
       quizNumber: 1,
-      categoryName: ""
+      categoryName: "",
+      correctPercentageObject: {},
     };
   },
 
@@ -181,7 +186,15 @@ export default {
       this.isQuizFinish = true;
       this.answerNo = "-";
       this.isAlreadyAnswered = true;
+      this.correctPercentageObject = {
+        correctScore: this.score,
+        mistakeScore: 10 - this.score
+      };
     },
+    showResult() {
+      this.$refs.modal.render();
+    },
+
   }
 };
 </script>
