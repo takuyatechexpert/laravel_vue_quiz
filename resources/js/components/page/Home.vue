@@ -1,8 +1,6 @@
 <template>
   <div>
 
-    <the-header></the-header>
-
     <main>
       <div class="container">
         <article class="col-md-8 col-xs-12">
@@ -76,22 +74,16 @@
       </div>
     </main>
 
-    <the-footer></the-footer>
-
   </div>
 </template>
 
 <script>
-import TheHeader from "../layout/TheHeader";
-import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
 import BarChart from "../module/BarChart";
 // header,foolerファイルを使える様にしている
 
 export default {
   components: {
-    TheHeader,
-    TheFooter,
     TheSidebar,
     BarChart,
     // importしたものを使用する

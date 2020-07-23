@@ -1,7 +1,5 @@
 <template>
   <div>
-    
-    <the-header></the-header>
 
     <main>
       <div class="container">
@@ -80,24 +78,18 @@
       </div>
     </main>
 
-    <the-footer></the-footer>
-
     <the-modal :correctPercentageObject="correctPercentageObject" ref="modal" ></the-modal>
 
   </div>
 </template>
 
 <script>
-import TheHeader from "../layout/TheHeader";
-import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
 import TheModal from "../module/TheModal";
 // header,foolerファイルを使える様にしている
 
 export default {
   components: {
-    TheHeader,
-    TheFooter,
     TheSidebar,
     TheModal,
     // importしたものを使用する
