@@ -82,11 +82,9 @@
 </template>
 
 <script>
-import TheHeader from "../layout/TheHeader";
-import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
 import BarChart from "../module/BarChart";
-// header,foolerファイルを使える様にしている
+// ファイルを使える様にしている
 
 export default {
   components: {

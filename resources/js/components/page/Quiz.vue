@@ -88,8 +88,6 @@
 </template>
 
 <script>
-import TheHeader from "../layout/TheHeader";
-import TheFooter from "../layout/TheFooter";
 import TheSidebar from "../layout/TheSidebar";
 import TheModal from "../module/TheModal";
 // header,foolerファイルを使える様にしている
