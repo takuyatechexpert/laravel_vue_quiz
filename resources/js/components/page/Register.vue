@@ -17,6 +17,7 @@
                   tag="form"
                   v-slot="{ invalid }"
                 >
+                <input type="hidden" name="_token" :value="csrf" />
                   <div class="form-group">
                     <label for="name" class="col-md-4 control-label">名前</label>
 
@@ -145,8 +146,21 @@ export default {
       name: "",
       email: "",
       password: "",
-      password_confirmation: ""
-    };
-  }
+      password_confirmation: "",
+      csrf: document
+          .querySelector('meta[name="csrf-token"]')
+          .getAttribute("content"),
+     };
+  },
+
+  methods: {
+    async register() {
+      const isValid = await this.$refs.observer.validate();
+      if (isValid) {
+        document.querySelector("#register").submit();
+      }
+    }
+  },
+  
 };
 </script>
