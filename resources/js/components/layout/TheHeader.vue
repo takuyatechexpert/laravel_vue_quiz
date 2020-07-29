@@ -48,7 +48,7 @@
               <ul class="dropdown-menu header-nav__drop-down" role="menu">
                 <li>
                   <router-link class="navbar-brand" id="header-nav__mypage" to="/mypage">マイページ</router-link>
-                  <a class="navbar-brand" id="header-nav__logout" >ログアウト</a>
+                  <a class="navbar-brand" id="header-nav__logout" @click="logout">ログアウト</a>
                   <form id="logout-form" action="/logout" method="POST" style="display: none;">
                     <input type="hidden" name="_token" :value="csrf" />
                   </form>
@@ -73,9 +73,16 @@ export default {
         .getAttribute("content")
     };
   },
+
   props: {
     auth: {
       type: Object | Array
+    }
+  },
+
+  methods: {
+    logout() {
+      document.querySelector("#logout-form").submit();
     }
   }
 };
