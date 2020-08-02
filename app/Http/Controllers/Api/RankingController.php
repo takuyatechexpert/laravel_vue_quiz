@@ -11,6 +11,11 @@ use DB;
 class RankingController extends Controller
 {
     //
+    /**
+   *
+   *
+   * @return
+   */
     public function index()
   {
     $weekRanking = Ranking::with('user')
