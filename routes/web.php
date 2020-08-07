@@ -19,6 +19,10 @@ Route::get('/quiz', function () {
     return view('quiz.index');
 });
 
+Route::get('/mypage', function () {
+  return view('mypage.index');
+});
+
 Route::get('/login', function () {
     return view('auth.login.index');
   });  
