@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Ranking extends Model
 {
@@ -17,6 +18,11 @@ class Ranking extends Model
     $ranking->save();
   }
   
+  public function getCreatedAtAttribute($date)
+  {
+    return Carbon::createFromFormat('Y-m-d H:i:s', $date)->format('Y/m/d');
+  }
+
   public function user()
   {
     return $this->belongsTo('App\User', 'user_id', 'id');
