@@ -8,7 +8,7 @@
             <h2 class="mypage-h2">
               <img class="mypage__logo" src="/images/mypage-icon.png" />マイページ
             </h2>
-            <h3>直近 回の正解率推移</h3>
+            <h3 v-if="changeCorrectRatioData.length !== 0">直近{{changeCorrectRatioData.percentage_correct_answer.length }}回の正解率推移</h3>
             <canvas ></canvas>
           </section>
         </article>
@@ -25,9 +25,16 @@ export default {
     TheSidebar
   },
 
+  data() {
+    return {
+      changeCorrectRatioData: []
+    };
+  },
+
   mounted() {
-    this.$http.get("/api/user").then(response => {
-      console.log(response.data);
+    this.$http.get("/api/mypage").then(response => {
+      this.changeCorrectRatioData = response.data;
+      console.log(this.changeCorrectRatioData);
     });
   }
 };
