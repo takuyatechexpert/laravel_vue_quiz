@@ -23,6 +23,10 @@ Route::get('/mypage', function () {
   return view('mypage.index');
 });
 
+Route::get('/keyword', function () {
+  return view('keyword.index');
+});
+
 Route::get('/login', function () {
     return view('auth.login.index');
   });  
