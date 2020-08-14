@@ -4875,15 +4875,15 @@ article {
   width: 10%;
 }
 
-keyword-h2 {
+.keyword-h2 {
   border-bottom: solid;
 }
 
-keyword__logo {
+.keyword__logo {
   width: 10%;
 }
 
-keyword__description {
+.keyword__description {
   margin-bottom: 30px;
 }
 
