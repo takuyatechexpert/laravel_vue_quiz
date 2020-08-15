@@ -325,11 +325,13 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     var categories = this.$route.query.categories;
+    var loader = this.$loading.show();
     this.$http.get("/api/quiz?categories=".concat(categories)).then(function (response) {
       _this.quizData = response.data;
 
       _this.findNextQuiz(0);
 
+      loader.hide();
       console.log(_this.quizData);
     });
   },
