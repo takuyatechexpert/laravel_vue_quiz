@@ -121,9 +121,18 @@ export default {
     this.$http.get(`/api/quiz?categories=${categories}`).then(response => {
       this.quizData = response.data;
       this.findNextQuiz(0);
-      loader.hide();
-      console.log(this.quizData);
-    });
+       if (this.quizData.length < 10) {
+          alert("クイズ10問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
+          location.href = "/";
+        } else {
+          this.findNextQuiz(0);
+          loader.hide();
+        }
+      }) // 例外発生時も初期画面戻す
+      .catch(error => {
+        alert("クイズの読み込みに失敗したため、初期画面に戻ります");
+        location.href = "/";
+      });
   },
 
   methods: {
