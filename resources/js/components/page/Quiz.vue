@@ -151,6 +151,7 @@ export default {
       }
     },
     findNextQuiz(quizNumber) {
+      window.scroll(0, 0);
       this.title = this.quizData[quizNumber].title;
       this.answers = [
         this.quizData[quizNumber].answer.answer_1,
