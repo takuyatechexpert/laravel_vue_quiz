@@ -2838,8 +2838,18 @@ __webpack_require__.r(__webpack_exports__);
 
       _this.findNextQuiz(0);
 
-      loader.hide();
-      console.log(_this.quizData);
+      if (_this.quizData.length < 10) {
+        alert("クイズ10問以下のため、初期画面に戻ります。カテゴリーを選択し直してください");
+        location.href = "/";
+      } else {
+        _this.findNextQuiz(0);
+
+        loader.hide();
+      }
+    }) // 例外発生時も初期画面戻す
+    ["catch"](function (error) {
+      alert("クイズの読み込みに失敗したため、初期画面に戻ります");
+      location.href = "/";
     });
   },
   methods: {
