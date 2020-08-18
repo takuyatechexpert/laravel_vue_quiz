@@ -21,7 +21,7 @@ Route::get('/quiz', function () {
 
 Route::get('/mypage', function () {
   return view('mypage.index');
-});
+})->middleware('auth');
 
 Route::get('/keyword', function () {
   return view('keyword.index');
@@ -29,7 +29,7 @@ Route::get('/keyword', function () {
 
 Route::get('/login', function () {
     return view('auth.login.index');
-  });  
+})->name('login');
 
 Route::get('/register', function () {
     return view('auth.register.index');
