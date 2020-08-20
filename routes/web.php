@@ -24,7 +24,7 @@ Route::get('/mypage', function () {
 })->middleware('auth');
 
 Route::get('/keyword', function () {
-  rreturn view('index');
+  return view('index');
 });
 
 Route::get('/login', function () {
