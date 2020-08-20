@@ -2312,6 +2312,7 @@ __webpack_require__.r(__webpack_exports__);
 
     this.$http.get("/api/category").then(function (response) {
       _this.category = response.data;
+      console.log(_this.category);
     });
     this.$http.get("/api/information").then(function (response) {
       _this.information = response.data;

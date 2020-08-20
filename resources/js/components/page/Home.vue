@@ -114,6 +114,7 @@ export default {
 
     this.$http.get("/api/category").then(response => {
       this.category = response.data;
+      console.log(this.category)
     });
 
     this.$http.get("/api/information").then(response => {

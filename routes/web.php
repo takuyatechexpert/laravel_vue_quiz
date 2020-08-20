@@ -16,15 +16,15 @@ Route::get('/', function () {
 });
 
 Route::get('/quiz', function () {
-    return view('quiz.index');
+  return view('index');
 });
 
 Route::get('/mypage', function () {
-  return view('mypage.index');
+  return view('index');
 })->middleware('auth');
 
 Route::get('/keyword', function () {
-  return view('keyword.index');
+  rreturn view('index');
 });
 
 Route::get('/login', function () {
