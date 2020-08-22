@@ -15,4 +15,6 @@ Route::group([
 
     $router->resource('/information', InformationController::class);
 
+    $router->resource('/categories', CategoryController::class);
+
 });
