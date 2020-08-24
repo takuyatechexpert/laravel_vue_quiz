@@ -20,4 +20,6 @@ Route::group([
     $router->resource('/users', UserController::class);
 
     $router->resource('/quizzes', QuizController::class);
+
+    $router->resource('/keywords', keywordController::class);
 });
