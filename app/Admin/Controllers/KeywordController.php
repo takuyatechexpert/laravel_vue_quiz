@@ -73,7 +73,9 @@ class KeywordController extends AdminController
         $form->text('initial', __('Initial'));
         $form->text('keyword', __('Keyword'));
         $form->textarea('description', __('Description'));
-        $form->number('categories_id', __('Categories id'));
+        $form->select('categories_id', 'カテゴリー')->options(function () {
+            return (new Category)->findCategorySelectBoxInAdmin();
+        })->rules('required');
 
         return $form;
     }
